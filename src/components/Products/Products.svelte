@@ -5,7 +5,9 @@
 </script>
 
 <div class="flex flex-wrap">
-	{#each products as product}
-		<Product {product} />
+	{#each Array(10) as _, i}
+		{#each products as product}
+			<Product {product} />
+		{/each}
 	{/each}
 </div>
